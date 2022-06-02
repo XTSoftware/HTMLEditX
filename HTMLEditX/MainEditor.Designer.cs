@@ -105,7 +105,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainEditor";
-            this.Text = "WebEditX";
+            this.Text = "HTMLEditX";
             this.ResumeLayout(false);
 
         }
