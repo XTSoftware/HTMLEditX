@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainEditor));
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.btnTemplate = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbEditor
@@ -45,20 +46,30 @@
             // 
             // btnTemplate
             // 
-            this.btnTemplate.Location = new System.Drawing.Point(729, 12);
+            this.btnTemplate.Location = new System.Drawing.Point(702, 12);
             this.btnTemplate.Name = "btnTemplate";
-            this.btnTemplate.Size = new System.Drawing.Size(76, 80);
+            this.btnTemplate.Size = new System.Drawing.Size(67, 80);
             this.btnTemplate.TabIndex = 1;
             this.btnTemplate.Text = "Add HTML Template";
             this.btnTemplate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTemplate.UseVisualStyleBackColor = true;
             this.btnTemplate.Click += new System.EventHandler(this.btnTemplate_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(30, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Preview";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 568);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTemplate);
             this.Controls.Add(this.rtbEditor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -72,6 +83,7 @@
 
         private System.Windows.Forms.RichTextBox rtbEditor;
         private System.Windows.Forms.Button btnTemplate;
+        private System.Windows.Forms.Button button1;
     }
 }
 
