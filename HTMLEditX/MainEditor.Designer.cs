@@ -32,6 +32,9 @@
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.btnTemplate = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.saveBtn = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // rtbEditor
@@ -65,11 +68,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // saveBtn
+            // 
+            this.saveBtn.Location = new System.Drawing.Point(703, 455);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(75, 23);
+            this.saveBtn.TabIndex = 3;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.Location = new System.Drawing.Point(703, 484);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.TabIndex = 4;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 568);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTemplate);
             this.Controls.Add(this.rtbEditor);
@@ -85,6 +114,9 @@
         private System.Windows.Forms.RichTextBox rtbEditor;
         private System.Windows.Forms.Button btnTemplate;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

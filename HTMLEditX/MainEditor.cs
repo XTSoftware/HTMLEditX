@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +48,40 @@ namespace HTMLEditX
             writer.Dispose();
             PreviewPane previewPane = new PreviewPane();
             previewPane.ShowDialog();
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Title = "Save";
+            saveDialog.Filter = "Hypertext Markup Language (HTML) Files (*.html)|*.html" + "|" +
+
+                                "Plain Text Files (*.txt)|*.txt";
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filetosave = saveDialog.FileName;
+                System.IO.StreamWriter writer = new System.IO.StreamWriter(filetosave);
+                writer.Write(rtbEditor.Text.ToString());
+                writer.Close();
+                writer.Dispose();
+            }
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string file = openFileDialog1.FileName;
+                try
+                {
+                    string text = File.ReadAllText(file);
+                    rtbEditor.Text = text;
+                }
+                catch (IOException)
+                {
+                }
+            }
         }
     }
 }
