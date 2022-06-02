@@ -30,11 +30,23 @@ namespace HTMLEditX
             rtbEditor.AppendText(" <!DOCTYPE html>" + newLine);
             rtbEditor.AppendText("<html>" + newLine);
             rtbEditor.AppendText("<head>" + newLine);
-            rtbEditor.AppendText("<title>Hello World!<title>" + newLine);
+            rtbEditor.AppendText("<title>Hello World!</title>" + newLine);
             rtbEditor.AppendText("</head>" + newLine);
             rtbEditor.AppendText("<body>" + newLine);
             rtbEditor.AppendText(newLine);
-            rtbEditor.AppendText("<h1>Hello World/<h1>");
+            rtbEditor.AppendText("<h1>Hello World</h1>");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
+            writer.Write(rtbEditor.Text.ToString());
+            writer.Close();
+            writer.Dispose();
+            PreviewPane previewPane = new PreviewPane();
+            previewPane.ShowDialog();
         }
     }
 }
