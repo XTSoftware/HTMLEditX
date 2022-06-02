@@ -103,6 +103,7 @@
             this.Controls.Add(this.btnTemplate);
             this.Controls.Add(this.rtbEditor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainEditor";
             this.Text = "WebEditX";
             this.ResumeLayout(false);
