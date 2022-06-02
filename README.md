@@ -1,5 +1,6 @@
 # HTMLEditX
 
+**Note: The software is still in development and may be buggy**
 A lightweight .NET HTML Editor
 
 
