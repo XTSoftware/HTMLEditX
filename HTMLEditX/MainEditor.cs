@@ -18,12 +18,25 @@ namespace HTMLEditX
             InitializeComponent();
         }
 
-        private void rtbEditor_TextChanged(object sender, EventArgs e)
+        private void btnOpen_Click(object sender, EventArgs e)
         {
-           
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string file = openFileDialog1.FileName;
+                try
+                {
+                    string text = File.ReadAllText(file);
+                    rtbEditor.Text = text;
+                }
+                catch (IOException)
+                {
+                }
+            }
         }
 
-        private void btnTemplate_Click(object sender, EventArgs e)
+        // _1 is because of UI change
+        private void btnTemplate_Click_1(object sender, EventArgs e)
         {
             //Bodged approach to adding new lines, don't ask why
 
@@ -36,12 +49,10 @@ namespace HTMLEditX
             rtbEditor.AppendText("<body>" + newLine);
             rtbEditor.AppendText(newLine);
             rtbEditor.AppendText("<h1>Hello World</h1>");
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPreview_Click(object sender, EventArgs e)
         {
-            
             System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
             writer.Write(rtbEditor.Text.ToString());
             writer.Close();
@@ -50,7 +61,7 @@ namespace HTMLEditX
             previewPane.ShowDialog();
         }
 
-        private void saveBtn_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.Title = "Save";
@@ -66,8 +77,8 @@ namespace HTMLEditX
                 writer.Dispose();
             }
         }
-
-        private void btnOpen_Click(object sender, EventArgs e)
+        // _1 is because of UI change
+        private void btnOpen_Click_1(object sender, EventArgs e)
         {
             DialogResult result = openFileDialog1.ShowDialog();
             if (result == DialogResult.OK)
