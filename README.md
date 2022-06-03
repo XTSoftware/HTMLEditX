@@ -1,6 +1,8 @@
 # HTMLEditX
 
-**Note: The software is still in development and may be buggy**
+Note: The software is still in development and may be buggy
+Check Landar branch for latest development
+
 A lightweight .NET HTML Editor
 
 
