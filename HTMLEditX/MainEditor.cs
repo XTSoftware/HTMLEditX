@@ -67,7 +67,7 @@ namespace HTMLEditX
             saveDialog.Title = "Save";
             saveDialog.Filter = "Hypertext Markup Language (HTML) Files (*.html)|*.html" + "|" +
 
-                                "Plain Text Files (*.txt)|*.txt";
+                                "Plain Text Files (*.txt)|*.txt" + "|" + "All files (*.*)|*.*" ;
             if (saveDialog.ShowDialog() == DialogResult.OK)
             {
                 string filetosave = saveDialog.FileName;
