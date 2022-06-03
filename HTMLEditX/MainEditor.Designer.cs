@@ -33,13 +33,13 @@
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.optionsPanel = new System.Windows.Forms.Panel();
+            this.btnFont = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnOpen = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnTemplate = new System.Windows.Forms.Button();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.optionsPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnFont = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.optionsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -64,8 +64,6 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.optionsPanel);
-            this.panel1.Controls.Add(this.btnOpen);
-            this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnPreview);
             this.panel1.Controls.Add(this.btnTemplate);
             this.panel1.Location = new System.Drawing.Point(489, 1);
@@ -73,9 +71,51 @@
             this.panel1.Size = new System.Drawing.Size(364, 565);
             this.panel1.TabIndex = 1;
             // 
+            // optionsPanel
+            // 
+            this.optionsPanel.BackColor = System.Drawing.Color.Gray;
+            this.optionsPanel.Controls.Add(this.btnFont);
+            this.optionsPanel.Controls.Add(this.btnOpen);
+            this.optionsPanel.Controls.Add(this.label1);
+            this.optionsPanel.Controls.Add(this.btnSave);
+            this.optionsPanel.Location = new System.Drawing.Point(199, 4);
+            this.optionsPanel.Name = "optionsPanel";
+            this.optionsPanel.Size = new System.Drawing.Size(152, 109);
+            this.optionsPanel.TabIndex = 4;
+            // 
+            // btnFont
+            // 
+            this.btnFont.Location = new System.Drawing.Point(4, 21);
+            this.btnFont.Name = "btnFont";
+            this.btnFont.Size = new System.Drawing.Size(75, 23);
+            this.btnFont.TabIndex = 1;
+            this.btnFont.Text = "Font";
+            this.btnFont.UseVisualStyleBackColor = true;
+            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Options";
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.Location = new System.Drawing.Point(3, 79);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.TabIndex = 3;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click_1);
+            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(3, 378);
+            this.btnSave.Location = new System.Drawing.Point(3, 50);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 2;
@@ -103,46 +143,6 @@
             this.btnTemplate.Text = "Add HTML Template";
             this.btnTemplate.UseVisualStyleBackColor = true;
             this.btnTemplate.Click += new System.EventHandler(this.btnTemplate_Click_1);
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.Location = new System.Drawing.Point(4, 408);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(75, 23);
-            this.btnOpen.TabIndex = 3;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click_1);
-            // 
-            // optionsPanel
-            // 
-            this.optionsPanel.BackColor = System.Drawing.Color.Gray;
-            this.optionsPanel.Controls.Add(this.btnFont);
-            this.optionsPanel.Controls.Add(this.label1);
-            this.optionsPanel.Location = new System.Drawing.Point(199, 4);
-            this.optionsPanel.Name = "optionsPanel";
-            this.optionsPanel.Size = new System.Drawing.Size(152, 194);
-            this.optionsPanel.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Options";
-            // 
-            // btnFont
-            // 
-            this.btnFont.Location = new System.Drawing.Point(4, 21);
-            this.btnFont.Name = "btnFont";
-            this.btnFont.Size = new System.Drawing.Size(75, 23);
-            this.btnFont.TabIndex = 1;
-            this.btnFont.Text = "Font";
-            this.btnFont.UseVisualStyleBackColor = true;
-            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
             // 
             // MainEditor
             // 
