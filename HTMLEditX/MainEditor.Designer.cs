@@ -37,7 +37,11 @@
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnTemplate = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
+            this.optionsPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnFont = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.optionsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -52,18 +56,19 @@
             this.rtbEditor.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbEditor.Location = new System.Drawing.Point(-1, 1);
             this.rtbEditor.Name = "rtbEditor";
-            this.rtbEditor.Size = new System.Drawing.Size(536, 565);
+            this.rtbEditor.Size = new System.Drawing.Size(494, 567);
             this.rtbEditor.TabIndex = 0;
             this.rtbEditor.Text = "";
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.optionsPanel);
             this.panel1.Controls.Add(this.btnOpen);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnPreview);
             this.panel1.Controls.Add(this.btnTemplate);
-            this.panel1.Location = new System.Drawing.Point(531, 1);
+            this.panel1.Location = new System.Drawing.Point(489, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(364, 565);
             this.panel1.TabIndex = 1;
@@ -109,11 +114,41 @@
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click_1);
             // 
+            // optionsPanel
+            // 
+            this.optionsPanel.BackColor = System.Drawing.Color.Gray;
+            this.optionsPanel.Controls.Add(this.btnFont);
+            this.optionsPanel.Controls.Add(this.label1);
+            this.optionsPanel.Location = new System.Drawing.Point(199, 4);
+            this.optionsPanel.Name = "optionsPanel";
+            this.optionsPanel.Size = new System.Drawing.Size(152, 194);
+            this.optionsPanel.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Options";
+            // 
+            // btnFont
+            // 
+            this.btnFont.Location = new System.Drawing.Point(4, 21);
+            this.btnFont.Name = "btnFont";
+            this.btnFont.Size = new System.Drawing.Size(75, 23);
+            this.btnFont.TabIndex = 1;
+            this.btnFont.Text = "Font";
+            this.btnFont.UseVisualStyleBackColor = true;
+            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 568);
+            this.ClientSize = new System.Drawing.Size(852, 570);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rtbEditor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -121,6 +156,8 @@
             this.Text = "HTMLEditX";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.optionsPanel.ResumeLayout(false);
+            this.optionsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -128,12 +165,15 @@
         #endregion
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FontDialog fontDialog1;
-        private System.Windows.Forms.RichTextBox rtbEditor;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTemplate;
         private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnOpen;
+        public System.Windows.Forms.RichTextBox rtbEditor;
+        private System.Windows.Forms.Panel optionsPanel;
+        private System.Windows.Forms.Button btnFont;
+        private System.Windows.Forms.Label label1;
     }
 }
 

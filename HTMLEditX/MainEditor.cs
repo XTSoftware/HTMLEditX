@@ -94,5 +94,16 @@ namespace HTMLEditX
                 }
             }
         }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            DialogResult FontResult = fontDialog1.ShowDialog();
+
+            if (FontResult != DialogResult.Cancel)
+            {
+                rtbEditor.Font = fontDialog1.Font;
+            }
+
+        }
     }
 }
