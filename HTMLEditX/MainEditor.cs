@@ -23,7 +23,10 @@ namespace HTMLEditX
         public MainEditor()
         {
             InitializeComponent();
+            
         }
+
+
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
@@ -116,6 +119,14 @@ namespace HTMLEditX
         private void button1_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowDialog();
+        }
+
+        private void btnAddbtn_Click(object sender, EventArgs e)
+        {
+
+            // Makes new button in HTML with text "Button"
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + " <button type=\"button\">button</button>");
         }
 
        

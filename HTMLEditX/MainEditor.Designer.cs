@@ -1,4 +1,19 @@
-﻿namespace HTMLEditX
+﻿/* HTMLEditX - A web development IDE from XT Software
+    Copyright (C) 2022 XT Software
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see https://www.gnu.org/licenses/. */
+
+namespace HTMLEditX
 {
     partial class MainEditor
     {
@@ -33,6 +48,9 @@
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAddbtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.optionsPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnFont = new System.Windows.Forms.Button();
@@ -43,6 +61,7 @@
             this.btnTemplate = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.optionsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +84,7 @@
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.optionsPanel);
             this.panel1.Controls.Add(this.btnPreview);
             this.panel1.Controls.Add(this.btnTemplate);
@@ -72,7 +92,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(364, 565);
             this.panel1.TabIndex = 1;
-            
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.btnAddbtn);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(10, 393);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(152, 144);
+            this.panel2.TabIndex = 5;
+            // 
+            // btnAddbtn
+            // 
+            this.btnAddbtn.Location = new System.Drawing.Point(7, 21);
+            this.btnAddbtn.Name = "btnAddbtn";
+            this.btnAddbtn.Size = new System.Drawing.Size(109, 23);
+            this.btnAddbtn.TabIndex = 1;
+            this.btnAddbtn.Text = "Clickable button";
+            this.btnAddbtn.UseVisualStyleBackColor = true;
+            this.btnAddbtn.Click += new System.EventHandler(this.btnAddbtn_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(4, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Insert";
             // 
             // optionsPanel
             // 
@@ -168,9 +217,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
             this.Text = "HTMLEditX";
-           
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.optionsPanel.ResumeLayout(false);
             this.optionsPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -191,6 +242,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnAddbtn;
+        private System.Windows.Forms.Label label2;
     }
 }
 
