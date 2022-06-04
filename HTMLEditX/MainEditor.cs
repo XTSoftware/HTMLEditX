@@ -54,7 +54,7 @@ namespace HTMLEditX
             rtbEditor.AppendText(" <!DOCTYPE html>" + newLine);
             rtbEditor.AppendText("<html>" + newLine);
             rtbEditor.AppendText("<head>" + newLine);
-            rtbEditor.AppendText("<title>Hello World!</title>" + newLine);
+            rtbEditor.AppendText("<title>This is displayed as the title</title>" + newLine);
             rtbEditor.AppendText("</head>" + newLine);
             rtbEditor.AppendText("<body>" + newLine);
             rtbEditor.AppendText(newLine);
@@ -129,6 +129,12 @@ namespace HTMLEditX
             rtbEditor.AppendText(newLine + " <button type=\"button\">button</button>");
         }
 
-       
+        private void btnJavaTemplate_Click(object sender, EventArgs e)
+        {
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + "<script type = 'text/javascript'>");
+            rtbEditor.AppendText(newLine + "      // Write Javascript code here");
+            rtbEditor.AppendText(newLine + "</script>");
+        }
     }
 }

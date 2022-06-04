@@ -60,6 +60,7 @@ namespace HTMLEditX
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnTemplate = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.btnJavaTemplate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.optionsPanel.SuspendLayout();
@@ -84,6 +85,7 @@ namespace HTMLEditX
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnJavaTemplate);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.optionsPanel);
             this.panel1.Controls.Add(this.btnPreview);
@@ -188,7 +190,7 @@ namespace HTMLEditX
             // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(10, 72);
+            this.btnPreview.Location = new System.Drawing.Point(10, 125);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(75, 23);
             this.btnPreview.TabIndex = 1;
@@ -207,6 +209,17 @@ namespace HTMLEditX
             this.btnTemplate.UseVisualStyleBackColor = true;
             this.btnTemplate.Click += new System.EventHandler(this.btnTemplate_Click_1);
             // 
+            // btnJavaTemplate
+            // 
+            this.btnJavaTemplate.AutoSize = true;
+            this.btnJavaTemplate.Location = new System.Drawing.Point(10, 63);
+            this.btnJavaTemplate.Name = "btnJavaTemplate";
+            this.btnJavaTemplate.Size = new System.Drawing.Size(116, 62);
+            this.btnJavaTemplate.TabIndex = 6;
+            this.btnJavaTemplate.Text = "Add JS Template";
+            this.btnJavaTemplate.UseVisualStyleBackColor = true;
+            this.btnJavaTemplate.Click += new System.EventHandler(this.btnJavaTemplate_Click);
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,7 +230,6 @@ namespace HTMLEditX
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
             this.Text = "HTMLEditX";
-            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -245,6 +257,7 @@ namespace HTMLEditX
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAddbtn;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnJavaTemplate;
     }
 }
 
