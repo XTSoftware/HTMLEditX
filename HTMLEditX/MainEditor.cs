@@ -118,14 +118,6 @@ namespace HTMLEditX
             folderBrowserDialog1.ShowDialog();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void MainEditor_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
