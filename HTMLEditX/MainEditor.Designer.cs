@@ -34,13 +34,13 @@
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.optionsPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnFont = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnOpen = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnTemplate = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1.SuspendLayout();
             this.optionsPanel.SuspendLayout();
@@ -72,6 +72,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(364, 565);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // optionsPanel
             // 
@@ -86,6 +87,16 @@
             this.optionsPanel.Size = new System.Drawing.Size(152, 144);
             this.optionsPanel.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 103);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(74, 41);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "File Manager";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnFont
             // 
             this.btnFont.Location = new System.Drawing.Point(4, 21);
@@ -96,16 +107,6 @@
             this.btnFont.UseVisualStyleBackColor = true;
             this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Options";
-            // 
             // btnOpen
             // 
             this.btnOpen.Location = new System.Drawing.Point(3, 79);
@@ -115,6 +116,16 @@
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Options";
             // 
             // btnSave
             // 
@@ -147,16 +158,6 @@
             this.btnTemplate.UseVisualStyleBackColor = true;
             this.btnTemplate.Click += new System.EventHandler(this.btnTemplate_Click_1);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 103);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 41);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "File Manager";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,6 +168,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
             this.Text = "HTMLEditX";
+            this.Load += new System.EventHandler(this.MainEditor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.optionsPanel.ResumeLayout(false);
