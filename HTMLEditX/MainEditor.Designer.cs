@@ -168,7 +168,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
             this.Text = "HTMLEditX";
-            this.Load += new System.EventHandler(this.MainEditor_Load);
+           
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.optionsPanel.ResumeLayout(false);
