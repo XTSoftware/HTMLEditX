@@ -48,7 +48,9 @@ namespace HTMLEditX
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnJavaTemplate = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnComment = new System.Windows.Forms.Button();
             this.btnAddbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.optionsPanel = new System.Windows.Forms.Panel();
@@ -60,7 +62,6 @@ namespace HTMLEditX
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnTemplate = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.btnJavaTemplate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.optionsPanel.SuspendLayout();
@@ -95,15 +96,37 @@ namespace HTMLEditX
             this.panel1.Size = new System.Drawing.Size(364, 565);
             this.panel1.TabIndex = 1;
             // 
+            // btnJavaTemplate
+            // 
+            this.btnJavaTemplate.AutoSize = true;
+            this.btnJavaTemplate.Location = new System.Drawing.Point(10, 63);
+            this.btnJavaTemplate.Name = "btnJavaTemplate";
+            this.btnJavaTemplate.Size = new System.Drawing.Size(116, 62);
+            this.btnJavaTemplate.TabIndex = 6;
+            this.btnJavaTemplate.Text = "Add JS Template";
+            this.btnJavaTemplate.UseVisualStyleBackColor = true;
+            this.btnJavaTemplate.Click += new System.EventHandler(this.btnJavaTemplate_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.btnComment);
             this.panel2.Controls.Add(this.btnAddbtn);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(10, 393);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(152, 144);
             this.panel2.TabIndex = 5;
+            // 
+            // btnComment
+            // 
+            this.btnComment.Location = new System.Drawing.Point(7, 51);
+            this.btnComment.Name = "btnComment";
+            this.btnComment.Size = new System.Drawing.Size(109, 23);
+            this.btnComment.TabIndex = 2;
+            this.btnComment.Text = "Comment";
+            this.btnComment.UseVisualStyleBackColor = true;
+            this.btnComment.Click += new System.EventHandler(this.btnComment_Click);
             // 
             // btnAddbtn
             // 
@@ -209,17 +232,6 @@ namespace HTMLEditX
             this.btnTemplate.UseVisualStyleBackColor = true;
             this.btnTemplate.Click += new System.EventHandler(this.btnTemplate_Click_1);
             // 
-            // btnJavaTemplate
-            // 
-            this.btnJavaTemplate.AutoSize = true;
-            this.btnJavaTemplate.Location = new System.Drawing.Point(10, 63);
-            this.btnJavaTemplate.Name = "btnJavaTemplate";
-            this.btnJavaTemplate.Size = new System.Drawing.Size(116, 62);
-            this.btnJavaTemplate.TabIndex = 6;
-            this.btnJavaTemplate.Text = "Add JS Template";
-            this.btnJavaTemplate.UseVisualStyleBackColor = true;
-            this.btnJavaTemplate.Click += new System.EventHandler(this.btnJavaTemplate_Click);
-            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +270,7 @@ namespace HTMLEditX
         private System.Windows.Forms.Button btnAddbtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnJavaTemplate;
+        private System.Windows.Forms.Button btnComment;
     }
 }
 

@@ -132,9 +132,15 @@ namespace HTMLEditX
         private void btnJavaTemplate_Click(object sender, EventArgs e)
         {
             string newLine = Environment.NewLine;
-            rtbEditor.AppendText("<script type = 'text/javascript'>");
+            rtbEditor.AppendText(newLine + "<script type = 'text/javascript'>");
             rtbEditor.AppendText(newLine + "          // Write Javascript code here");
             rtbEditor.AppendText(newLine + "</script>");
+        }
+
+        private void btnComment_Click(object sender, EventArgs e)
+        {
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + "<!-- This is an example comment -->");
         }
     }
 }
