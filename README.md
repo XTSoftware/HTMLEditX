@@ -3,8 +3,7 @@
 
 *Note: The software is still in development and may be buggy*
 
-Check Landar branch for latest development
-
+This branch is frozen at development version 0.1.2 from 5th June 2022
 A lightweight .NET HTML Editor
 
 ## How to help
