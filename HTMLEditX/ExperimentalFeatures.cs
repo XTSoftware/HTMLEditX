@@ -22,5 +22,11 @@ namespace HTMLEditX
             FileMan fm = new FileMan();
             fm.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PreviewEdge edge = new PreviewEdge();
+            edge.ShowDialog();
+        }
     }
 }
