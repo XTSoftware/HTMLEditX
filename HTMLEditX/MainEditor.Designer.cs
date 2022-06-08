@@ -54,13 +54,13 @@ namespace HTMLEditX
             this.btnAddbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.optionsPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnFont = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnTemplate = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.optionsPanel.SuspendLayout();
@@ -156,6 +156,16 @@ namespace HTMLEditX
             this.optionsPanel.Size = new System.Drawing.Size(152, 144);
             this.optionsPanel.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(4, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Experimental";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // btnFont
             // 
             this.btnFont.Location = new System.Drawing.Point(4, 21);
@@ -217,16 +227,6 @@ namespace HTMLEditX
             this.btnTemplate.UseVisualStyleBackColor = true;
             this.btnTemplate.Click += new System.EventHandler(this.btnTemplate_Click_1);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Experimental";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,7 +236,7 @@ namespace HTMLEditX
             this.Controls.Add(this.rtbEditor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
-            this.Text = "HTMLEditX";
+            this.Text = "HTMLEditX Editor";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
