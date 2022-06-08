@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExperimentalFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExperimentalFeatures.Designer.cs">
+      <DependentUpon>ExperimentalFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileMan.Designer.cs">
+      <DependentUpon>FileMan.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExperimentalFeatures.resx">
+      <DependentUpon>ExperimentalFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileMan.resx">
+      <DependentUpon>FileMan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainEditor.resx">
       <DependentUpon>MainEditor.cs</DependentUpon>
     </EmbeddedResource>

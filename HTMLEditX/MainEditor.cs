@@ -118,7 +118,7 @@ namespace HTMLEditX
 
         private void button1_Click(object sender, EventArgs e)
         {
-            folderBrowserDialog1.ShowDialog();
+            
         }
 
         private void btnAddbtn_Click(object sender, EventArgs e)
@@ -141,6 +141,12 @@ namespace HTMLEditX
         {
             string newLine = Environment.NewLine;
             rtbEditor.AppendText(newLine + "<!-- This is an example comment -->");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ExperimentalFeatures ef = new ExperimentalFeatures();
+            ef.ShowDialog();
         }
     }
 }
