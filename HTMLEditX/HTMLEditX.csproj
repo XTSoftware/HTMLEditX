@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DarkUI, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DarkUI.2.0.2\lib\DarkUI.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1210.39, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1210.39\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
     </Reference>
