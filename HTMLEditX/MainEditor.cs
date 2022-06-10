@@ -85,5 +85,57 @@ namespace HTMLEditX
         {
 
         }
+
+        private void btnHTMLTempl_Click(object sender, EventArgs e)
+        {
+            //Bodged approach to adding new lines, don't ask why
+
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(" <!DOCTYPE html>" + newLine);
+            rtbEditor.AppendText("<html>" + newLine);
+            rtbEditor.AppendText("<head>" + newLine);
+            rtbEditor.AppendText("<title>This is displayed as the title</title>" + newLine);
+            rtbEditor.AppendText("</head>" + newLine);
+            rtbEditor.AppendText("<body>" + newLine);
+            rtbEditor.AppendText(newLine);
+            rtbEditor.AppendText("<h1>Hello World</h1>");
+        }
+
+        private void btnJSTemp_Click(object sender, EventArgs e)
+        {
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + "<script type = 'text/javascript'>");
+            rtbEditor.AppendText(newLine + "   document.write('Hello, World!');       // Write Javascript code here");
+            rtbEditor.AppendText(newLine + "</script>");
+        }
+
+        private void btnPreview_Click(object sender, EventArgs e)
+        {
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
+            writer.Write(rtbEditor.Text.ToString());
+            writer.Close();
+            writer.Dispose();
+            PreviewPane previewPane = new PreviewPane();
+            previewPane.ShowDialog();
+        }
+
+        private void btnAddbtn_Click(object sender, EventArgs e)
+        {
+            // Makes new button in HTML with text "Button"
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + " <button type=\"button\">button</button>");
+        }
+
+        private void btnAddHtmlComment_Click(object sender, EventArgs e)
+        {
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + "<!-- This is an example comment -->");
+        }
+
+        private void btnJScomment_Click(object sender, EventArgs e)
+        {
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + "// This is an example comment");
+        }
     }
 }
