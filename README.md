@@ -3,7 +3,7 @@
 
 *Note: The software is still in development and may be buggy*
 
-Check Landar branch for latest development
+Check 0.2-dev branch for latest development
 
 A lightweight .NET HTML Editor
 
