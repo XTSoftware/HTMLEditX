@@ -49,13 +49,21 @@ namespace HTMLEditX
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.darkDockPanel1 = new DarkUI.Docking.DarkDockPanel();
             this.darkSectionPanel1 = new DarkUI.Controls.DarkSectionPanel();
+            this.btnExperimental = new DarkUI.Controls.DarkButton();
+            this.btnOpen = new DarkUI.Controls.DarkButton();
+            this.btnSave = new DarkUI.Controls.DarkButton();
             this.btnFont = new DarkUI.Controls.DarkButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSave = new DarkUI.Controls.DarkButton();
-            this.btnOpen = new DarkUI.Controls.DarkButton();
-            this.btnExperimental = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel2 = new DarkUI.Controls.DarkSectionPanel();
+            this.btnAddHtmlComment = new DarkUI.Controls.DarkButton();
+            this.btnAddbtn = new DarkUI.Controls.DarkButton();
+            this.btnJSTemp = new DarkUI.Controls.DarkButton();
+            this.btnHTMLTempl = new DarkUI.Controls.DarkButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnPreview = new DarkUI.Controls.DarkButton();
+            this.btnJScomment = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
+            this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rtbEditor
@@ -94,6 +102,36 @@ namespace HTMLEditX
             this.darkSectionPanel1.TabIndex = 2;
             this.darkSectionPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.darkSectionPanel1_Paint);
             // 
+            // btnExperimental
+            // 
+            this.btnExperimental.Location = new System.Drawing.Point(7, 65);
+            this.btnExperimental.Name = "btnExperimental";
+            this.btnExperimental.Padding = new System.Windows.Forms.Padding(5);
+            this.btnExperimental.Size = new System.Drawing.Size(140, 23);
+            this.btnExperimental.TabIndex = 4;
+            this.btnExperimental.Text = "Experimental settings";
+            this.btnExperimental.Click += new System.EventHandler(this.btnExperimental_Click);
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.Location = new System.Drawing.Point(398, 65);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Padding = new System.Windows.Forms.Padding(5);
+            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.TabIndex = 3;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(398, 28);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Padding = new System.Windows.Forms.Padding(5);
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // btnFont
             // 
             this.btnFont.Location = new System.Drawing.Point(5, 29);
@@ -113,50 +151,97 @@ namespace HTMLEditX
             this.label1.TabIndex = 0;
             this.label1.Text = "Options";
             // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(398, 28);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Padding = new System.Windows.Forms.Padding(5);
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.Location = new System.Drawing.Point(398, 65);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Padding = new System.Windows.Forms.Padding(5);
-            this.btnOpen.Size = new System.Drawing.Size(75, 23);
-            this.btnOpen.TabIndex = 3;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btnExperimental
-            // 
-            this.btnExperimental.Location = new System.Drawing.Point(7, 65);
-            this.btnExperimental.Name = "btnExperimental";
-            this.btnExperimental.Padding = new System.Windows.Forms.Padding(5);
-            this.btnExperimental.Size = new System.Drawing.Size(140, 23);
-            this.btnExperimental.TabIndex = 4;
-            this.btnExperimental.Text = "Experimental settings";
-            this.btnExperimental.Click += new System.EventHandler(this.btnExperimental_Click);
-            // 
             // darkSectionPanel2
             // 
-            this.darkSectionPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.darkSectionPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.darkSectionPanel2.Controls.Add(this.btnJScomment);
+            this.darkSectionPanel2.Controls.Add(this.btnAddHtmlComment);
+            this.darkSectionPanel2.Controls.Add(this.btnAddbtn);
+            this.darkSectionPanel2.Controls.Add(this.btnJSTemp);
+            this.darkSectionPanel2.Controls.Add(this.btnHTMLTempl);
+            this.darkSectionPanel2.Controls.Add(this.label2);
             this.darkSectionPanel2.Location = new System.Drawing.Point(640, 12);
             this.darkSectionPanel2.Name = "darkSectionPanel2";
             this.darkSectionPanel2.SectionHeader = null;
-            this.darkSectionPanel2.Size = new System.Drawing.Size(200, 100);
+            this.darkSectionPanel2.Size = new System.Drawing.Size(200, 170);
             this.darkSectionPanel2.TabIndex = 3;
+            // 
+            // btnAddHtmlComment
+            // 
+            this.btnAddHtmlComment.Location = new System.Drawing.Point(88, 57);
+            this.btnAddHtmlComment.Name = "btnAddHtmlComment";
+            this.btnAddHtmlComment.Padding = new System.Windows.Forms.Padding(5);
+            this.btnAddHtmlComment.Size = new System.Drawing.Size(107, 23);
+            this.btnAddHtmlComment.TabIndex = 4;
+            this.btnAddHtmlComment.Text = "HTML comment";
+            this.btnAddHtmlComment.Click += new System.EventHandler(this.btnAddHtmlComment_Click);
+            // 
+            // btnAddbtn
+            // 
+            this.btnAddbtn.Location = new System.Drawing.Point(89, 28);
+            this.btnAddbtn.Name = "btnAddbtn";
+            this.btnAddbtn.Padding = new System.Windows.Forms.Padding(5);
+            this.btnAddbtn.Size = new System.Drawing.Size(107, 23);
+            this.btnAddbtn.TabIndex = 3;
+            this.btnAddbtn.Text = "Clickable button";
+            this.btnAddbtn.Click += new System.EventHandler(this.btnAddbtn_Click);
+            // 
+            // btnJSTemp
+            // 
+            this.btnJSTemp.Location = new System.Drawing.Point(7, 86);
+            this.btnJSTemp.Name = "btnJSTemp";
+            this.btnJSTemp.Padding = new System.Windows.Forms.Padding(5);
+            this.btnJSTemp.Size = new System.Drawing.Size(75, 52);
+            this.btnJSTemp.TabIndex = 2;
+            this.btnJSTemp.Text = "Add JS Template";
+            this.btnJSTemp.Click += new System.EventHandler(this.btnJSTemp_Click);
+            // 
+            // btnHTMLTempl
+            // 
+            this.btnHTMLTempl.Location = new System.Drawing.Point(7, 28);
+            this.btnHTMLTempl.Name = "btnHTMLTempl";
+            this.btnHTMLTempl.Padding = new System.Windows.Forms.Padding(5);
+            this.btnHTMLTempl.Size = new System.Drawing.Size(75, 52);
+            this.btnHTMLTempl.TabIndex = 1;
+            this.btnHTMLTempl.Text = "Add HTML Template";
+            this.btnHTMLTempl.Click += new System.EventHandler(this.btnHTMLTempl_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Insert";
+            // 
+            // btnPreview
+            // 
+            this.btnPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPreview.Location = new System.Drawing.Point(500, 17);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Padding = new System.Windows.Forms.Padding(5);
+            this.btnPreview.Size = new System.Drawing.Size(75, 23);
+            this.btnPreview.TabIndex = 4;
+            this.btnPreview.Text = "Preview";
+            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
+            // 
+            // btnJScomment
+            // 
+            this.btnJScomment.Location = new System.Drawing.Point(88, 86);
+            this.btnJScomment.Name = "btnJScomment";
+            this.btnJScomment.Padding = new System.Windows.Forms.Padding(5);
+            this.btnJScomment.Size = new System.Drawing.Size(107, 23);
+            this.btnJScomment.TabIndex = 5;
+            this.btnJScomment.Text = "JS Comment";
+            this.btnJScomment.Click += new System.EventHandler(this.btnJScomment_Click);
             // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 570);
+            this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.darkSectionPanel2);
             this.Controls.Add(this.darkSectionPanel1);
             this.Controls.Add(this.darkDockPanel1);
@@ -166,6 +251,8 @@ namespace HTMLEditX
             this.Text = "HTMLEditX Editor";
             this.darkSectionPanel1.ResumeLayout(false);
             this.darkSectionPanel1.PerformLayout();
+            this.darkSectionPanel2.ResumeLayout(false);
+            this.darkSectionPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -182,6 +269,13 @@ namespace HTMLEditX
         private DarkUI.Controls.DarkButton btnOpen;
         private DarkUI.Controls.DarkButton btnExperimental;
         private DarkUI.Controls.DarkSectionPanel darkSectionPanel2;
+        private DarkUI.Controls.DarkButton btnHTMLTempl;
+        private System.Windows.Forms.Label label2;
+        private DarkUI.Controls.DarkButton btnJSTemp;
+        private DarkUI.Controls.DarkButton btnPreview;
+        private DarkUI.Controls.DarkButton btnAddbtn;
+        private DarkUI.Controls.DarkButton btnAddHtmlComment;
+        private DarkUI.Controls.DarkButton btnJScomment;
     }
 }
 
