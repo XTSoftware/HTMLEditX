@@ -64,6 +64,7 @@ namespace HTMLEditX
             this.label2 = new System.Windows.Forms.Label();
             this.btnPreview = new DarkUI.Controls.DarkButton();
             this.btnCustomTemp = new DarkUI.Controls.DarkButton();
+            this.btnUnderline = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -156,6 +157,7 @@ namespace HTMLEditX
             // darkSectionPanel2
             // 
             this.darkSectionPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.darkSectionPanel2.Controls.Add(this.btnUnderline);
             this.darkSectionPanel2.Controls.Add(this.btnCustomTemp);
             this.darkSectionPanel2.Controls.Add(this.btnBold);
             this.darkSectionPanel2.Controls.Add(this.btnJScomment);
@@ -260,6 +262,16 @@ namespace HTMLEditX
             this.btnCustomTemp.Text = "Add Experimental Custom Template";
             this.btnCustomTemp.Click += new System.EventHandler(this.btnCustomTemp_Click);
             // 
+            // btnUnderline
+            // 
+            this.btnUnderline.Location = new System.Drawing.Point(101, 144);
+            this.btnUnderline.Name = "btnUnderline";
+            this.btnUnderline.Padding = new System.Windows.Forms.Padding(5);
+            this.btnUnderline.Size = new System.Drawing.Size(107, 23);
+            this.btnUnderline.TabIndex = 8;
+            this.btnUnderline.Text = "Underlined text";
+            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,6 +314,7 @@ namespace HTMLEditX
         private DarkUI.Controls.DarkButton btnJScomment;
         private DarkUI.Controls.DarkButton btnBold;
         private DarkUI.Controls.DarkButton btnCustomTemp;
+        private DarkUI.Controls.DarkButton btnUnderline;
     }
 }
 
