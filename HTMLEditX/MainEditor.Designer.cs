@@ -329,6 +329,7 @@ namespace HTMLEditX
             this.btnHeadingIV.Size = new System.Drawing.Size(75, 23);
             this.btnHeadingIV.TabIndex = 13;
             this.btnHeadingIV.Text = "Heading 4";
+            this.btnHeadingIV.Click += new System.EventHandler(this.btnHeadingIV_Click);
             // 
             // MainEditor
             // 
