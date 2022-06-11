@@ -157,5 +157,11 @@ namespace HTMLEditX
             string newLine = Environment.NewLine;
             rtbEditor.AppendText(newLine + "<p><u>This is underlined text</u></p>");
         }
+
+        private void btnHeadingI_Click(object sender, EventArgs e)
+        {
+            string nlHeadings = Environment.NewLine;
+            rtbEditor.AppendText(nlHeadings + "<h1>Heading I</h1>");
+        }
     }
 }
