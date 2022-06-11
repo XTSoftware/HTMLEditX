@@ -19,14 +19,19 @@ namespace HTMLEditX
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FileMan fm = new FileMan();
-            fm.ShowDialog();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             PreviewEdge edge = new PreviewEdge();
             edge.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Templates templates = new Templates();
+            templates.ShowDialog();
         }
     }
 }

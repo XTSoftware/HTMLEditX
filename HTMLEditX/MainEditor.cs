@@ -143,5 +143,13 @@ namespace HTMLEditX
             string nlbold = Environment.NewLine;
             rtbEditor.AppendText(nlbold + "<p><strong>This text is bold</strong></p>");
         }
+
+        private void btnCustomTemp_Click(object sender, EventArgs e)
+        {
+            string CustomTEMP = File.ReadAllText("C:/Users/Public/customtemplate.html");
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + CustomTEMP);
+            
+        }
     }
 }
