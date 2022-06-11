@@ -2,8 +2,8 @@
 # HTMLEditX 
 
 *Note: The software is still in development and may be buggy*
-This is the latest development branch
 
+This is the latest development branch - You may need the [.NET Framework](https://go.microsoft.com/fwlink/?LinkId=2085155) and the [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703) to run the program.
 A lightweight .NET HTML Editor
 
 ## How to help
