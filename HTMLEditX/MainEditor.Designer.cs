@@ -293,7 +293,7 @@ namespace HTMLEditX
             // 
             // btnHeadingI
             // 
-            this.btnHeadingI.Location = new System.Drawing.Point(0, 420);
+            this.btnHeadingI.Location = new System.Drawing.Point(4, 420);
             this.btnHeadingI.Name = "btnHeadingI";
             this.btnHeadingI.Padding = new System.Windows.Forms.Padding(5);
             this.btnHeadingI.Size = new System.Drawing.Size(75, 23);
@@ -303,7 +303,7 @@ namespace HTMLEditX
             // 
             // btnHeadingII
             // 
-            this.btnHeadingII.Location = new System.Drawing.Point(84, 420);
+            this.btnHeadingII.Location = new System.Drawing.Point(85, 420);
             this.btnHeadingII.Name = "btnHeadingII";
             this.btnHeadingII.Padding = new System.Windows.Forms.Padding(5);
             this.btnHeadingII.Size = new System.Drawing.Size(75, 23);
@@ -312,7 +312,7 @@ namespace HTMLEditX
             // 
             // btnHeadingIII
             // 
-            this.btnHeadingIII.Location = new System.Drawing.Point(0, 450);
+            this.btnHeadingIII.Location = new System.Drawing.Point(3, 449);
             this.btnHeadingIII.Name = "btnHeadingIII";
             this.btnHeadingIII.Padding = new System.Windows.Forms.Padding(5);
             this.btnHeadingIII.Size = new System.Drawing.Size(75, 23);
@@ -321,7 +321,7 @@ namespace HTMLEditX
             // 
             // btnHeadingIV
             // 
-            this.btnHeadingIV.Location = new System.Drawing.Point(84, 449);
+            this.btnHeadingIV.Location = new System.Drawing.Point(85, 449);
             this.btnHeadingIV.Name = "btnHeadingIV";
             this.btnHeadingIV.Padding = new System.Windows.Forms.Padding(5);
             this.btnHeadingIV.Size = new System.Drawing.Size(75, 23);
