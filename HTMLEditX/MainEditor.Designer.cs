@@ -309,6 +309,7 @@ namespace HTMLEditX
             this.btnHeadingII.Size = new System.Drawing.Size(75, 23);
             this.btnHeadingII.TabIndex = 11;
             this.btnHeadingII.Text = "Heading 2";
+            this.btnHeadingII.Click += new System.EventHandler(this.btnHeadingII_Click);
             // 
             // btnHeadingIII
             // 
@@ -318,6 +319,7 @@ namespace HTMLEditX
             this.btnHeadingIII.Size = new System.Drawing.Size(75, 23);
             this.btnHeadingIII.TabIndex = 12;
             this.btnHeadingIII.Text = "Heading 3";
+            this.btnHeadingIII.Click += new System.EventHandler(this.btnHeadingIII_Click);
             // 
             // btnHeadingIV
             // 
