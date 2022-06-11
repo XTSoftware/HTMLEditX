@@ -187,5 +187,10 @@ namespace HTMLEditX
             string nlTags = Environment.NewLine;
             rtbEditor.AppendText(nlTags + " <i>This is italic text</i> ");
         }
+
+        private void MainEditor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

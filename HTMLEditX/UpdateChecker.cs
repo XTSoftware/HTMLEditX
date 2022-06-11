@@ -21,26 +21,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-namespace HTMLEditX
 
+namespace HTMLEditX
 {
-    
-    public partial class FileMan : Form
+    public partial class UpdateChecker : Form
     {
-        public FileMan()
+        public UpdateChecker()
         {
             InitializeComponent();
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        private void UpdateChecker_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void FileMan_Load(object sender, EventArgs e)
-        {
-            webBrowser1.Navigate(@"C:\");
         }
     }
-}

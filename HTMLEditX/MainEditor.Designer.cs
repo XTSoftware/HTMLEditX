@@ -55,6 +55,14 @@ namespace HTMLEditX
             this.btnFont = new DarkUI.Controls.DarkButton();
             this.label1 = new System.Windows.Forms.Label();
             this.darkSectionPanel2 = new DarkUI.Controls.DarkSectionPanel();
+            this.btnItalic = new DarkUI.Controls.DarkButton();
+            this.btnHeadingIV = new DarkUI.Controls.DarkButton();
+            this.btnHeadingIII = new DarkUI.Controls.DarkButton();
+            this.btnHeadingII = new DarkUI.Controls.DarkButton();
+            this.btnHeadingI = new DarkUI.Controls.DarkButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnUnderline = new DarkUI.Controls.DarkButton();
+            this.btnCustomTemp = new DarkUI.Controls.DarkButton();
             this.btnBold = new DarkUI.Controls.DarkButton();
             this.btnJScomment = new DarkUI.Controls.DarkButton();
             this.btnAddHtmlComment = new DarkUI.Controls.DarkButton();
@@ -63,14 +71,6 @@ namespace HTMLEditX
             this.btnHTMLTempl = new DarkUI.Controls.DarkButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPreview = new DarkUI.Controls.DarkButton();
-            this.btnCustomTemp = new DarkUI.Controls.DarkButton();
-            this.btnUnderline = new DarkUI.Controls.DarkButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnHeadingI = new DarkUI.Controls.DarkButton();
-            this.btnHeadingII = new DarkUI.Controls.DarkButton();
-            this.btnHeadingIII = new DarkUI.Controls.DarkButton();
-            this.btnHeadingIV = new DarkUI.Controls.DarkButton();
-            this.btnItalic = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -184,6 +184,85 @@ namespace HTMLEditX
             this.darkSectionPanel2.Size = new System.Drawing.Size(212, 510);
             this.darkSectionPanel2.TabIndex = 3;
             // 
+            // btnItalic
+            // 
+            this.btnItalic.Location = new System.Drawing.Point(101, 173);
+            this.btnItalic.Name = "btnItalic";
+            this.btnItalic.Padding = new System.Windows.Forms.Padding(5);
+            this.btnItalic.Size = new System.Drawing.Size(107, 23);
+            this.btnItalic.TabIndex = 14;
+            this.btnItalic.Text = "Italic text";
+            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
+            // 
+            // btnHeadingIV
+            // 
+            this.btnHeadingIV.Location = new System.Drawing.Point(85, 449);
+            this.btnHeadingIV.Name = "btnHeadingIV";
+            this.btnHeadingIV.Padding = new System.Windows.Forms.Padding(5);
+            this.btnHeadingIV.Size = new System.Drawing.Size(75, 23);
+            this.btnHeadingIV.TabIndex = 13;
+            this.btnHeadingIV.Text = "Heading 4";
+            this.btnHeadingIV.Click += new System.EventHandler(this.btnHeadingIV_Click);
+            // 
+            // btnHeadingIII
+            // 
+            this.btnHeadingIII.Location = new System.Drawing.Point(3, 449);
+            this.btnHeadingIII.Name = "btnHeadingIII";
+            this.btnHeadingIII.Padding = new System.Windows.Forms.Padding(5);
+            this.btnHeadingIII.Size = new System.Drawing.Size(75, 23);
+            this.btnHeadingIII.TabIndex = 12;
+            this.btnHeadingIII.Text = "Heading 3";
+            this.btnHeadingIII.Click += new System.EventHandler(this.btnHeadingIII_Click);
+            // 
+            // btnHeadingII
+            // 
+            this.btnHeadingII.Location = new System.Drawing.Point(85, 420);
+            this.btnHeadingII.Name = "btnHeadingII";
+            this.btnHeadingII.Padding = new System.Windows.Forms.Padding(5);
+            this.btnHeadingII.Size = new System.Drawing.Size(75, 23);
+            this.btnHeadingII.TabIndex = 11;
+            this.btnHeadingII.Text = "Heading 2";
+            this.btnHeadingII.Click += new System.EventHandler(this.btnHeadingII_Click);
+            // 
+            // btnHeadingI
+            // 
+            this.btnHeadingI.Location = new System.Drawing.Point(4, 420);
+            this.btnHeadingI.Name = "btnHeadingI";
+            this.btnHeadingI.Padding = new System.Windows.Forms.Padding(5);
+            this.btnHeadingI.Size = new System.Drawing.Size(75, 23);
+            this.btnHeadingI.TabIndex = 10;
+            this.btnHeadingI.Text = "Heading 1";
+            this.btnHeadingI.Click += new System.EventHandler(this.btnHeadingI_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 403);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Add Headings";
+            // 
+            // btnUnderline
+            // 
+            this.btnUnderline.Location = new System.Drawing.Point(101, 144);
+            this.btnUnderline.Name = "btnUnderline";
+            this.btnUnderline.Padding = new System.Windows.Forms.Padding(5);
+            this.btnUnderline.Size = new System.Drawing.Size(107, 23);
+            this.btnUnderline.TabIndex = 8;
+            this.btnUnderline.Text = "Underlined text";
+            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
+            // 
+            // btnCustomTemp
+            // 
+            this.btnCustomTemp.Location = new System.Drawing.Point(4, 144);
+            this.btnCustomTemp.Name = "btnCustomTemp";
+            this.btnCustomTemp.Padding = new System.Windows.Forms.Padding(5);
+            this.btnCustomTemp.Size = new System.Drawing.Size(87, 61);
+            this.btnCustomTemp.TabIndex = 7;
+            this.btnCustomTemp.Text = "Add Experimental Custom Template";
+            this.btnCustomTemp.Click += new System.EventHandler(this.btnCustomTemp_Click);
+            // 
             // btnBold
             // 
             this.btnBold.Location = new System.Drawing.Point(101, 115);
@@ -264,85 +343,6 @@ namespace HTMLEditX
             this.btnPreview.Text = "Preview";
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
-            // btnCustomTemp
-            // 
-            this.btnCustomTemp.Location = new System.Drawing.Point(4, 144);
-            this.btnCustomTemp.Name = "btnCustomTemp";
-            this.btnCustomTemp.Padding = new System.Windows.Forms.Padding(5);
-            this.btnCustomTemp.Size = new System.Drawing.Size(87, 61);
-            this.btnCustomTemp.TabIndex = 7;
-            this.btnCustomTemp.Text = "Add Experimental Custom Template";
-            this.btnCustomTemp.Click += new System.EventHandler(this.btnCustomTemp_Click);
-            // 
-            // btnUnderline
-            // 
-            this.btnUnderline.Location = new System.Drawing.Point(101, 144);
-            this.btnUnderline.Name = "btnUnderline";
-            this.btnUnderline.Padding = new System.Windows.Forms.Padding(5);
-            this.btnUnderline.Size = new System.Drawing.Size(107, 23);
-            this.btnUnderline.TabIndex = 8;
-            this.btnUnderline.Text = "Underlined text";
-            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 403);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Add Headings";
-            // 
-            // btnHeadingI
-            // 
-            this.btnHeadingI.Location = new System.Drawing.Point(4, 420);
-            this.btnHeadingI.Name = "btnHeadingI";
-            this.btnHeadingI.Padding = new System.Windows.Forms.Padding(5);
-            this.btnHeadingI.Size = new System.Drawing.Size(75, 23);
-            this.btnHeadingI.TabIndex = 10;
-            this.btnHeadingI.Text = "Heading 1";
-            this.btnHeadingI.Click += new System.EventHandler(this.btnHeadingI_Click);
-            // 
-            // btnHeadingII
-            // 
-            this.btnHeadingII.Location = new System.Drawing.Point(85, 420);
-            this.btnHeadingII.Name = "btnHeadingII";
-            this.btnHeadingII.Padding = new System.Windows.Forms.Padding(5);
-            this.btnHeadingII.Size = new System.Drawing.Size(75, 23);
-            this.btnHeadingII.TabIndex = 11;
-            this.btnHeadingII.Text = "Heading 2";
-            this.btnHeadingII.Click += new System.EventHandler(this.btnHeadingII_Click);
-            // 
-            // btnHeadingIII
-            // 
-            this.btnHeadingIII.Location = new System.Drawing.Point(3, 449);
-            this.btnHeadingIII.Name = "btnHeadingIII";
-            this.btnHeadingIII.Padding = new System.Windows.Forms.Padding(5);
-            this.btnHeadingIII.Size = new System.Drawing.Size(75, 23);
-            this.btnHeadingIII.TabIndex = 12;
-            this.btnHeadingIII.Text = "Heading 3";
-            this.btnHeadingIII.Click += new System.EventHandler(this.btnHeadingIII_Click);
-            // 
-            // btnHeadingIV
-            // 
-            this.btnHeadingIV.Location = new System.Drawing.Point(85, 449);
-            this.btnHeadingIV.Name = "btnHeadingIV";
-            this.btnHeadingIV.Padding = new System.Windows.Forms.Padding(5);
-            this.btnHeadingIV.Size = new System.Drawing.Size(75, 23);
-            this.btnHeadingIV.TabIndex = 13;
-            this.btnHeadingIV.Text = "Heading 4";
-            this.btnHeadingIV.Click += new System.EventHandler(this.btnHeadingIV_Click);
-            // 
-            // btnItalic
-            // 
-            this.btnItalic.Location = new System.Drawing.Point(97, 173);
-            this.btnItalic.Name = "btnItalic";
-            this.btnItalic.Padding = new System.Windows.Forms.Padding(5);
-            this.btnItalic.Size = new System.Drawing.Size(107, 23);
-            this.btnItalic.TabIndex = 14;
-            this.btnItalic.Text = "Italic text";
-            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
-            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,6 +356,7 @@ namespace HTMLEditX
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
             this.Text = "HTMLEditX Editor";
+            this.Load += new System.EventHandler(this.MainEditor_Load);
             this.darkSectionPanel1.ResumeLayout(false);
             this.darkSectionPanel1.PerformLayout();
             this.darkSectionPanel2.ResumeLayout(false);
