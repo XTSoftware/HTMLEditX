@@ -173,7 +173,13 @@ namespace HTMLEditX
         private void btnHeadingIII_Click(object sender, EventArgs e)
         {
             string nlHeadings = Environment.NewLine;
-            rtbEditor.AppendText(nlHeadings + "<h2>Heading II</h2>");
+            rtbEditor.AppendText(nlHeadings + "<h3>Heading III</h3>");
+        }
+
+        private void btnHeadingIV_Click(object sender, EventArgs e)
+        {
+            string nlHeadings = Environment.NewLine;
+            rtbEditor.AppendText(nlHeadings + "<h4>Heading IV</h4>");
         }
     }
 }
