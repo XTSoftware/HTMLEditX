@@ -70,6 +70,7 @@ namespace HTMLEditX
             this.btnHeadingII = new DarkUI.Controls.DarkButton();
             this.btnHeadingIII = new DarkUI.Controls.DarkButton();
             this.btnHeadingIV = new DarkUI.Controls.DarkButton();
+            this.btnItalic = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -162,6 +163,7 @@ namespace HTMLEditX
             // darkSectionPanel2
             // 
             this.darkSectionPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.darkSectionPanel2.Controls.Add(this.btnItalic);
             this.darkSectionPanel2.Controls.Add(this.btnHeadingIV);
             this.darkSectionPanel2.Controls.Add(this.btnHeadingIII);
             this.darkSectionPanel2.Controls.Add(this.btnHeadingII);
@@ -331,6 +333,16 @@ namespace HTMLEditX
             this.btnHeadingIV.Text = "Heading 4";
             this.btnHeadingIV.Click += new System.EventHandler(this.btnHeadingIV_Click);
             // 
+            // btnItalic
+            // 
+            this.btnItalic.Location = new System.Drawing.Point(97, 173);
+            this.btnItalic.Name = "btnItalic";
+            this.btnItalic.Padding = new System.Windows.Forms.Padding(5);
+            this.btnItalic.Size = new System.Drawing.Size(107, 23);
+            this.btnItalic.TabIndex = 14;
+            this.btnItalic.Text = "Italic text";
+            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,6 +391,7 @@ namespace HTMLEditX
         private DarkUI.Controls.DarkButton btnHeadingII;
         private DarkUI.Controls.DarkButton btnHeadingI;
         private System.Windows.Forms.Label label3;
+        private DarkUI.Controls.DarkButton btnItalic;
     }
 }
 

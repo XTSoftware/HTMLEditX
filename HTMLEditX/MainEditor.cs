@@ -181,5 +181,11 @@ namespace HTMLEditX
             string nlHeadings = Environment.NewLine;
             rtbEditor.AppendText(nlHeadings + "<h4>Heading IV</h4>");
         }
+
+        private void btnItalic_Click(object sender, EventArgs e)
+        {
+            string nlTags = Environment.NewLine;
+            rtbEditor.AppendText(nlTags + " <i>This is italic text</i> ");
+        }
     }
 }
