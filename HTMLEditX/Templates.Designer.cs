@@ -60,7 +60,7 @@
             // btnSaveAsTemp
             // 
             this.btnSaveAsTemp.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveAsTemp.Location = new System.Drawing.Point(268, 205);
+            this.btnSaveAsTemp.Location = new System.Drawing.Point(253, 206);
             this.btnSaveAsTemp.Name = "btnSaveAsTemp";
             this.btnSaveAsTemp.Padding = new System.Windows.Forms.Padding(5);
             this.btnSaveAsTemp.Size = new System.Drawing.Size(110, 23);

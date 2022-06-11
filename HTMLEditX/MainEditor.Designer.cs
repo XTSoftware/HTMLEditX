@@ -106,17 +106,17 @@ namespace HTMLEditX
             // 
             // btnExperimental
             // 
-            this.btnExperimental.Location = new System.Drawing.Point(7, 65);
+            this.btnExperimental.Location = new System.Drawing.Point(7, 28);
             this.btnExperimental.Name = "btnExperimental";
             this.btnExperimental.Padding = new System.Windows.Forms.Padding(5);
-            this.btnExperimental.Size = new System.Drawing.Size(140, 23);
+            this.btnExperimental.Size = new System.Drawing.Size(84, 39);
             this.btnExperimental.TabIndex = 4;
             this.btnExperimental.Text = "Experimental settings";
             this.btnExperimental.Click += new System.EventHandler(this.btnExperimental_Click);
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(398, 65);
+            this.btnOpen.Location = new System.Drawing.Point(398, 58);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Padding = new System.Windows.Forms.Padding(5);
             this.btnOpen.Size = new System.Drawing.Size(75, 23);
@@ -126,7 +126,7 @@ namespace HTMLEditX
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(398, 28);
+            this.btnSave.Location = new System.Drawing.Point(398, 29);
             this.btnSave.Name = "btnSave";
             this.btnSave.Padding = new System.Windows.Forms.Padding(5);
             this.btnSave.Size = new System.Drawing.Size(75, 23);
@@ -136,7 +136,7 @@ namespace HTMLEditX
             // 
             // btnFont
             // 
-            this.btnFont.Location = new System.Drawing.Point(5, 29);
+            this.btnFont.Location = new System.Drawing.Point(317, 29);
             this.btnFont.Name = "btnFont";
             this.btnFont.Padding = new System.Windows.Forms.Padding(5);
             this.btnFont.Size = new System.Drawing.Size(75, 23);
