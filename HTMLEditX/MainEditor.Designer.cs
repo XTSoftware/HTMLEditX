@@ -340,7 +340,7 @@ namespace HTMLEditX
             this.btnPreview.Padding = new System.Windows.Forms.Padding(5);
             this.btnPreview.Size = new System.Drawing.Size(75, 23);
             this.btnPreview.TabIndex = 4;
-            this.btnPreview.Text = "Preview";
+            this.btnPreview.Text = "Preview IE";
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
             // MainEditor
@@ -356,7 +356,6 @@ namespace HTMLEditX
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainEditor";
             this.Text = "HTMLEditX Editor";
-            this.Load += new System.EventHandler(this.MainEditor_Load);
             this.darkSectionPanel1.ResumeLayout(false);
             this.darkSectionPanel1.PerformLayout();
             this.darkSectionPanel2.ResumeLayout(false);

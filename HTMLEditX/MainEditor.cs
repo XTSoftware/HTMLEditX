@@ -188,6 +188,6 @@ namespace HTMLEditX
             rtbEditor.AppendText(nlTags + " <i>This is italic text</i> ");
         }
 
-    
+     
     }
 }
