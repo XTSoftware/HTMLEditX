@@ -83,7 +83,7 @@ namespace HTMLEditX
             this.rtbEditor.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbEditor.Location = new System.Drawing.Point(-1, 1);
             this.rtbEditor.Name = "rtbEditor";
-            this.rtbEditor.Size = new System.Drawing.Size(494, 567);
+            this.rtbEditor.Size = new System.Drawing.Size(499, 567);
             this.rtbEditor.TabIndex = 0;
             this.rtbEditor.Text = "";
             // 
@@ -91,7 +91,7 @@ namespace HTMLEditX
             // 
             this.darkDockPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.darkDockPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.darkDockPanel1.Location = new System.Drawing.Point(491, 0);
+            this.darkDockPanel1.Location = new System.Drawing.Point(496, 0);
             this.darkDockPanel1.Name = "darkDockPanel1";
             this.darkDockPanel1.Size = new System.Drawing.Size(361, 570);
             this.darkDockPanel1.TabIndex = 1;
@@ -107,7 +107,7 @@ namespace HTMLEditX
             this.darkSectionPanel1.Location = new System.Drawing.Point(0, 470);
             this.darkSectionPanel1.Name = "darkSectionPanel1";
             this.darkSectionPanel1.SectionHeader = null;
-            this.darkSectionPanel1.Size = new System.Drawing.Size(491, 100);
+            this.darkSectionPanel1.Size = new System.Drawing.Size(496, 100);
             this.darkSectionPanel1.TabIndex = 2;
             this.darkSectionPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.darkSectionPanel1_Paint);
             // 
@@ -178,7 +178,7 @@ namespace HTMLEditX
             this.darkSectionPanel2.Controls.Add(this.btnJSTemp);
             this.darkSectionPanel2.Controls.Add(this.btnHTMLTempl);
             this.darkSectionPanel2.Controls.Add(this.label2);
-            this.darkSectionPanel2.Location = new System.Drawing.Point(640, 12);
+            this.darkSectionPanel2.Location = new System.Drawing.Point(645, 12);
             this.darkSectionPanel2.Name = "darkSectionPanel2";
             this.darkSectionPanel2.SectionHeader = null;
             this.darkSectionPanel2.Size = new System.Drawing.Size(212, 510);
@@ -335,7 +335,7 @@ namespace HTMLEditX
             // btnPreview
             // 
             this.btnPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPreview.Location = new System.Drawing.Point(500, 17);
+            this.btnPreview.Location = new System.Drawing.Point(505, 17);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Padding = new System.Windows.Forms.Padding(5);
             this.btnPreview.Size = new System.Drawing.Size(75, 23);
@@ -347,7 +347,7 @@ namespace HTMLEditX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 570);
+            this.ClientSize = new System.Drawing.Size(857, 570);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.darkSectionPanel2);
             this.Controls.Add(this.darkSectionPanel1);
