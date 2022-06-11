@@ -151,5 +151,11 @@ namespace HTMLEditX
             rtbEditor.AppendText(newLine + CustomTEMP);
             
         }
+
+        private void btnUnderline_Click(object sender, EventArgs e)
+        {
+            string newLine = Environment.NewLine;
+            rtbEditor.AppendText(newLine + "<p><u>This is underlined text</u></p>");
+        }
     }
 }
