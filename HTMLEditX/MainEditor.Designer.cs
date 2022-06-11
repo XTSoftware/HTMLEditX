@@ -55,6 +55,7 @@ namespace HTMLEditX
             this.btnFont = new DarkUI.Controls.DarkButton();
             this.label1 = new System.Windows.Forms.Label();
             this.darkSectionPanel2 = new DarkUI.Controls.DarkSectionPanel();
+            this.btnBold = new DarkUI.Controls.DarkButton();
             this.btnJScomment = new DarkUI.Controls.DarkButton();
             this.btnAddHtmlComment = new DarkUI.Controls.DarkButton();
             this.btnAddbtn = new DarkUI.Controls.DarkButton();
@@ -62,7 +63,7 @@ namespace HTMLEditX
             this.btnHTMLTempl = new DarkUI.Controls.DarkButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPreview = new DarkUI.Controls.DarkButton();
-            this.btnBold = new DarkUI.Controls.DarkButton();
+            this.btnCustomTemp = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -168,6 +169,16 @@ namespace HTMLEditX
             this.darkSectionPanel2.Size = new System.Drawing.Size(200, 170);
             this.darkSectionPanel2.TabIndex = 3;
             // 
+            // btnBold
+            // 
+            this.btnBold.Location = new System.Drawing.Point(88, 116);
+            this.btnBold.Name = "btnBold";
+            this.btnBold.Padding = new System.Windows.Forms.Padding(5);
+            this.btnBold.Size = new System.Drawing.Size(107, 23);
+            this.btnBold.TabIndex = 6;
+            this.btnBold.Text = "Bold text";
+            this.btnBold.Click += new System.EventHandler(this.btnBold_Click);
+            // 
             // btnJScomment
             // 
             this.btnJScomment.Location = new System.Drawing.Point(88, 86);
@@ -238,21 +249,22 @@ namespace HTMLEditX
             this.btnPreview.Text = "Preview";
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
-            // btnBold
+            // btnCustomTemp
             // 
-            this.btnBold.Location = new System.Drawing.Point(88, 116);
-            this.btnBold.Name = "btnBold";
-            this.btnBold.Padding = new System.Windows.Forms.Padding(5);
-            this.btnBold.Size = new System.Drawing.Size(107, 23);
-            this.btnBold.TabIndex = 6;
-            this.btnBold.Text = "Bold text";
-            this.btnBold.Click += new System.EventHandler(this.btnBold_Click);
+            this.btnCustomTemp.Location = new System.Drawing.Point(640, 188);
+            this.btnCustomTemp.Name = "btnCustomTemp";
+            this.btnCustomTemp.Padding = new System.Windows.Forms.Padding(5);
+            this.btnCustomTemp.Size = new System.Drawing.Size(143, 61);
+            this.btnCustomTemp.TabIndex = 7;
+            this.btnCustomTemp.Text = "Add Experimental Custom Template";
+            this.btnCustomTemp.Click += new System.EventHandler(this.btnCustomTemp_Click);
             // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 570);
+            this.Controls.Add(this.btnCustomTemp);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.darkSectionPanel2);
             this.Controls.Add(this.darkSectionPanel1);
@@ -289,6 +301,7 @@ namespace HTMLEditX
         private DarkUI.Controls.DarkButton btnAddHtmlComment;
         private DarkUI.Controls.DarkButton btnJScomment;
         private DarkUI.Controls.DarkButton btnBold;
+        private DarkUI.Controls.DarkButton btnCustomTemp;
     }
 }
 
