@@ -137,5 +137,11 @@ namespace HTMLEditX
             string newLine = Environment.NewLine;
             rtbEditor.AppendText(newLine + "// This is an example comment");
         }
+
+        private void btnBold_Click(object sender, EventArgs e)
+        {
+            string nlbold = Environment.NewLine;
+            rtbEditor.AppendText(nlbold + "<p><strong>This text is bold</strong></p>");
+        }
     }
 }
