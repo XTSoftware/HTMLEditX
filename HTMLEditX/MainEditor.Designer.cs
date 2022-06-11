@@ -156,6 +156,7 @@ namespace HTMLEditX
             // darkSectionPanel2
             // 
             this.darkSectionPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.darkSectionPanel2.Controls.Add(this.btnCustomTemp);
             this.darkSectionPanel2.Controls.Add(this.btnBold);
             this.darkSectionPanel2.Controls.Add(this.btnJScomment);
             this.darkSectionPanel2.Controls.Add(this.btnAddHtmlComment);
@@ -166,12 +167,12 @@ namespace HTMLEditX
             this.darkSectionPanel2.Location = new System.Drawing.Point(640, 12);
             this.darkSectionPanel2.Name = "darkSectionPanel2";
             this.darkSectionPanel2.SectionHeader = null;
-            this.darkSectionPanel2.Size = new System.Drawing.Size(200, 170);
+            this.darkSectionPanel2.Size = new System.Drawing.Size(212, 216);
             this.darkSectionPanel2.TabIndex = 3;
             // 
             // btnBold
             // 
-            this.btnBold.Location = new System.Drawing.Point(88, 116);
+            this.btnBold.Location = new System.Drawing.Point(101, 115);
             this.btnBold.Name = "btnBold";
             this.btnBold.Padding = new System.Windows.Forms.Padding(5);
             this.btnBold.Size = new System.Drawing.Size(107, 23);
@@ -181,7 +182,7 @@ namespace HTMLEditX
             // 
             // btnJScomment
             // 
-            this.btnJScomment.Location = new System.Drawing.Point(88, 86);
+            this.btnJScomment.Location = new System.Drawing.Point(101, 86);
             this.btnJScomment.Name = "btnJScomment";
             this.btnJScomment.Padding = new System.Windows.Forms.Padding(5);
             this.btnJScomment.Size = new System.Drawing.Size(107, 23);
@@ -191,7 +192,7 @@ namespace HTMLEditX
             // 
             // btnAddHtmlComment
             // 
-            this.btnAddHtmlComment.Location = new System.Drawing.Point(88, 57);
+            this.btnAddHtmlComment.Location = new System.Drawing.Point(101, 57);
             this.btnAddHtmlComment.Name = "btnAddHtmlComment";
             this.btnAddHtmlComment.Padding = new System.Windows.Forms.Padding(5);
             this.btnAddHtmlComment.Size = new System.Drawing.Size(107, 23);
@@ -201,7 +202,7 @@ namespace HTMLEditX
             // 
             // btnAddbtn
             // 
-            this.btnAddbtn.Location = new System.Drawing.Point(89, 28);
+            this.btnAddbtn.Location = new System.Drawing.Point(101, 28);
             this.btnAddbtn.Name = "btnAddbtn";
             this.btnAddbtn.Padding = new System.Windows.Forms.Padding(5);
             this.btnAddbtn.Size = new System.Drawing.Size(107, 23);
@@ -214,7 +215,7 @@ namespace HTMLEditX
             this.btnJSTemp.Location = new System.Drawing.Point(7, 86);
             this.btnJSTemp.Name = "btnJSTemp";
             this.btnJSTemp.Padding = new System.Windows.Forms.Padding(5);
-            this.btnJSTemp.Size = new System.Drawing.Size(75, 52);
+            this.btnJSTemp.Size = new System.Drawing.Size(84, 52);
             this.btnJSTemp.TabIndex = 2;
             this.btnJSTemp.Text = "Add JS Template";
             this.btnJSTemp.Click += new System.EventHandler(this.btnJSTemp_Click);
@@ -224,7 +225,7 @@ namespace HTMLEditX
             this.btnHTMLTempl.Location = new System.Drawing.Point(7, 28);
             this.btnHTMLTempl.Name = "btnHTMLTempl";
             this.btnHTMLTempl.Padding = new System.Windows.Forms.Padding(5);
-            this.btnHTMLTempl.Size = new System.Drawing.Size(75, 52);
+            this.btnHTMLTempl.Size = new System.Drawing.Size(84, 52);
             this.btnHTMLTempl.TabIndex = 1;
             this.btnHTMLTempl.Text = "Add HTML Template";
             this.btnHTMLTempl.Click += new System.EventHandler(this.btnHTMLTempl_Click);
@@ -251,10 +252,10 @@ namespace HTMLEditX
             // 
             // btnCustomTemp
             // 
-            this.btnCustomTemp.Location = new System.Drawing.Point(640, 188);
+            this.btnCustomTemp.Location = new System.Drawing.Point(4, 144);
             this.btnCustomTemp.Name = "btnCustomTemp";
             this.btnCustomTemp.Padding = new System.Windows.Forms.Padding(5);
-            this.btnCustomTemp.Size = new System.Drawing.Size(143, 61);
+            this.btnCustomTemp.Size = new System.Drawing.Size(87, 61);
             this.btnCustomTemp.TabIndex = 7;
             this.btnCustomTemp.Text = "Add Experimental Custom Template";
             this.btnCustomTemp.Click += new System.EventHandler(this.btnCustomTemp_Click);
@@ -264,7 +265,6 @@ namespace HTMLEditX
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 570);
-            this.Controls.Add(this.btnCustomTemp);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.darkSectionPanel2);
             this.Controls.Add(this.darkSectionPanel1);
