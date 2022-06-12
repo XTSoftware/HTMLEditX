@@ -365,6 +365,7 @@ namespace HTMLEditX
             this.btnAbout.Size = new System.Drawing.Size(84, 23);
             this.btnAbout.TabIndex = 16;
             this.btnAbout.Text = "About";
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // MainEditor
             // 

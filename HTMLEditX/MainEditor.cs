@@ -196,5 +196,10 @@ namespace HTMLEditX
             rtbEditor.AppendText(nlForm + "<input type=\"text\" id=\"helloworld\" name=\"helloworld\"><br>");
             rtbEditor.AppendText(nlForm + "</form>");
         }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            About aboutwindow = new About();
+        }
     }
 }
