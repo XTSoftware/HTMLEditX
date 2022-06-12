@@ -200,6 +200,7 @@ namespace HTMLEditX
         private void btnAbout_Click(object sender, EventArgs e)
         {
             About aboutwindow = new About();
+            aboutwindow.ShowDialog();
         }
     }
 }
