@@ -71,6 +71,7 @@ namespace HTMLEditX
             this.btnHTMLTempl = new DarkUI.Controls.DarkButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPreview = new DarkUI.Controls.DarkButton();
+            this.btnForm = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -163,6 +164,7 @@ namespace HTMLEditX
             // darkSectionPanel2
             // 
             this.darkSectionPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.darkSectionPanel2.Controls.Add(this.btnForm);
             this.darkSectionPanel2.Controls.Add(this.btnItalic);
             this.darkSectionPanel2.Controls.Add(this.btnHeadingIV);
             this.darkSectionPanel2.Controls.Add(this.btnHeadingIII);
@@ -343,6 +345,16 @@ namespace HTMLEditX
             this.btnPreview.Text = "Preview IE";
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
+            // btnForm
+            // 
+            this.btnForm.Location = new System.Drawing.Point(7, 211);
+            this.btnForm.Name = "btnForm";
+            this.btnForm.Padding = new System.Windows.Forms.Padding(5);
+            this.btnForm.Size = new System.Drawing.Size(107, 23);
+            this.btnForm.TabIndex = 15;
+            this.btnForm.Text = "Basic form";
+            this.btnForm.Click += new System.EventHandler(this.btnForm_Click);
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,6 +404,7 @@ namespace HTMLEditX
         private DarkUI.Controls.DarkButton btnHeadingI;
         private System.Windows.Forms.Label label3;
         private DarkUI.Controls.DarkButton btnItalic;
+        private DarkUI.Controls.DarkButton btnForm;
     }
 }
 

@@ -188,6 +188,13 @@ namespace HTMLEditX
             rtbEditor.AppendText(nlTags + " <i>This is italic text</i> ");
         }
 
-     
+        private void btnForm_Click(object sender, EventArgs e)
+        {
+            string nlForm = Environment.NewLine;
+            rtbEditor.AppendText(nlForm + "<form>");
+            rtbEditor.AppendText(nlForm + "<label for=\"helloworld\">Hello World</label><br>");
+            rtbEditor.AppendText(nlForm + "<input type=\"text\" id=\"helloworld\" name=\"helloworld\"><br>");
+            rtbEditor.AppendText(nlForm + "</form>");
+        }
     }
 }
