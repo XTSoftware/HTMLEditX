@@ -72,6 +72,7 @@ namespace HTMLEditX
             this.label2 = new System.Windows.Forms.Label();
             this.btnPreview = new DarkUI.Controls.DarkButton();
             this.btnForm = new DarkUI.Controls.DarkButton();
+            this.btnAbout = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +100,7 @@ namespace HTMLEditX
             // 
             // darkSectionPanel1
             // 
+            this.darkSectionPanel1.Controls.Add(this.btnAbout);
             this.darkSectionPanel1.Controls.Add(this.btnExperimental);
             this.darkSectionPanel1.Controls.Add(this.btnOpen);
             this.darkSectionPanel1.Controls.Add(this.btnSave);
@@ -350,10 +352,19 @@ namespace HTMLEditX
             this.btnForm.Location = new System.Drawing.Point(7, 211);
             this.btnForm.Name = "btnForm";
             this.btnForm.Padding = new System.Windows.Forms.Padding(5);
-            this.btnForm.Size = new System.Drawing.Size(107, 23);
+            this.btnForm.Size = new System.Drawing.Size(84, 23);
             this.btnForm.TabIndex = 15;
             this.btnForm.Text = "Basic form";
             this.btnForm.Click += new System.EventHandler(this.btnForm_Click);
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Location = new System.Drawing.Point(7, 75);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Padding = new System.Windows.Forms.Padding(5);
+            this.btnAbout.Size = new System.Drawing.Size(84, 23);
+            this.btnAbout.TabIndex = 16;
+            this.btnAbout.Text = "About";
             // 
             // MainEditor
             // 
@@ -405,6 +416,7 @@ namespace HTMLEditX
         private System.Windows.Forms.Label label3;
         private DarkUI.Controls.DarkButton btnItalic;
         private DarkUI.Controls.DarkButton btnForm;
+        private DarkUI.Controls.DarkButton btnAbout;
     }
 }
 
