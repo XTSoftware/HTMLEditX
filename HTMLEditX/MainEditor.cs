@@ -202,5 +202,15 @@ namespace HTMLEditX
             About aboutwindow = new About();
             aboutwindow.ShowDialog();
         }
+
+        private void btnPreEdge_Click(object sender, EventArgs e)
+        {
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
+            writer.Write(rtbEditor.Text.ToString());
+            writer.Close();
+            writer.Dispose();
+            PreviewEdge previewEdge = new PreviewEdge();
+            previewEdge.ShowDialog();
+        }
     }
 }
