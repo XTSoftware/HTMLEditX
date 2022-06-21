@@ -37,7 +37,7 @@ namespace HTMLEditX
 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        public void SaveFile()
         {
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.Title = "Save";
@@ -52,6 +52,20 @@ namespace HTMLEditX
                 writer.Close();
                 writer.Dispose();
             }
+        }
+
+        public void SavePreview() 
+        {
+
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
+            writer.Write(rtbEditor.Text.ToString());
+            writer.Close();
+            writer.Dispose();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveFile();
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -73,10 +87,7 @@ namespace HTMLEditX
 
         private void btnExperimental_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
-            writer.Write(rtbEditor.Text.ToString());
-            writer.Close();
-            writer.Dispose();
+            
             ExperimentalFeatures ef = new ExperimentalFeatures();
             ef.ShowDialog();
         }
@@ -205,10 +216,7 @@ namespace HTMLEditX
 
         private void btnPreEdge_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
-            writer.Write(rtbEditor.Text.ToString());
-            writer.Close();
-            writer.Dispose();
+            SavePreview();
             PreviewEdge previewEdge = new PreviewEdge();
             previewEdge.ShowDialog();
         }
