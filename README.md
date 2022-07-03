@@ -5,7 +5,7 @@
 
 You may need the [.NET Framework](https://go.microsoft.com/fwlink/?LinkId=2085155) to run the program.
 
-Check 0.2-dev branch for latest development
+This branch has latest developement 
 
 A lightweight .NET HTML Editor 
 
