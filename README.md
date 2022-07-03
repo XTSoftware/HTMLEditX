@@ -3,7 +3,7 @@
 
 *Note: The software is still in development and may be buggy*
 
-You may need the [.NET Framework](https://go.microsoft.com/fwlink/?LinkId=2085155) to run the program.
+You may need the [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)  to run the program.
 
 This branch has latest developement 
 
