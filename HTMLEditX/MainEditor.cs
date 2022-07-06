@@ -194,5 +194,12 @@ namespace HTMLEditX
             UpdateChecker checker = new UpdateChecker();
             checker.ShowDialog();
         }
+
+        private void btnPrevedge_Click(object sender, EventArgs e)
+        {
+            PreviewLoad();
+            PreviewEdge prev = new PreviewEdge();
+            prev.ShowDialog();
+        }
     }
 }
