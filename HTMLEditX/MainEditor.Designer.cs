@@ -71,6 +71,7 @@ namespace HTMLEditX
             this.btnHTMLTempl = new DarkUI.Controls.DarkButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPreview = new DarkUI.Controls.DarkButton();
+            this.btnUcheck = new DarkUI.Controls.DarkButton();
             this.darkSectionPanel1.SuspendLayout();
             this.darkSectionPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -343,11 +344,23 @@ namespace HTMLEditX
             this.btnPreview.Text = "Preview";
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
+            // btnUcheck
+            // 
+            this.btnUcheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUcheck.Location = new System.Drawing.Point(500, 46);
+            this.btnUcheck.Name = "btnUcheck";
+            this.btnUcheck.Padding = new System.Windows.Forms.Padding(5);
+            this.btnUcheck.Size = new System.Drawing.Size(75, 33);
+            this.btnUcheck.TabIndex = 5;
+            this.btnUcheck.Text = "Update Checker";
+            this.btnUcheck.Click += new System.EventHandler(this.btnUcheck_Click);
+            // 
             // MainEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 570);
+            this.Controls.Add(this.btnUcheck);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.darkSectionPanel2);
             this.Controls.Add(this.darkSectionPanel1);
@@ -392,6 +405,7 @@ namespace HTMLEditX
         private DarkUI.Controls.DarkButton btnHeadingI;
         private System.Windows.Forms.Label label3;
         private DarkUI.Controls.DarkButton btnItalic;
+        private DarkUI.Controls.DarkButton btnUcheck;
     }
 }
 
