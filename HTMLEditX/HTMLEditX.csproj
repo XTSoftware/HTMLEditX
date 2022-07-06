@@ -98,6 +98,12 @@
     <Compile Include="Templates.Designer.cs">
       <DependentUpon>Templates.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateChecker.Designer.cs">
+      <DependentUpon>UpdateChecker.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ExperimentalFeatures.resx">
       <DependentUpon>ExperimentalFeatures.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="Templates.resx">
       <DependentUpon>Templates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecker.resx">
+      <DependentUpon>UpdateChecker.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

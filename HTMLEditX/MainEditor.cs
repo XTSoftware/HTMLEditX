@@ -73,14 +73,18 @@ namespace HTMLEditX
 
         private void btnExperimental_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
-            writer.Write(rtbEditor.Text.ToString());
-            writer.Close();
-            writer.Dispose();
+            PreviewLoad();
             ExperimentalFeatures ef = new ExperimentalFeatures();
             ef.ShowDialog();
         }
 
+        public void PreviewLoad()
+        {
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
+            writer.Write(rtbEditor.Text.ToString());
+            writer.Close();
+            writer.Dispose();
+        }
         private void darkSectionPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -111,10 +115,7 @@ namespace HTMLEditX
 
         private void btnPreview_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"C:/Users/Public/preview.html");
-            writer.Write(rtbEditor.Text.ToString());
-            writer.Close();
-            writer.Dispose();
+            PreviewLoad();
             PreviewPane previewPane = new PreviewPane();
             previewPane.ShowDialog();
         }
