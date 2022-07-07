@@ -11,3 +11,8 @@ A lightweight .NET HTML Editor
 
 ## How to help
 Make sure to leave some feedback on Issues and check the wiki for some documentation! We also now have GitHub Discussions
+
+wotsit
+toaster was here!!!!!!!
+
+landar is the best
