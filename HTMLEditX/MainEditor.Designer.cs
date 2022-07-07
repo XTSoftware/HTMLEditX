@@ -105,6 +105,7 @@ namespace HTMLEditX
             this.darkSectionPanel1.Controls.Add(this.btnSave);
             this.darkSectionPanel1.Controls.Add(this.btnFont);
             this.darkSectionPanel1.Controls.Add(this.label1);
+            this.darkSectionPanel1.Controls.Add(this.btnCustomTemp);
             this.darkSectionPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.darkSectionPanel1.Location = new System.Drawing.Point(0, 470);
             this.darkSectionPanel1.Name = "darkSectionPanel1";
@@ -172,7 +173,6 @@ namespace HTMLEditX
             this.darkSectionPanel2.Controls.Add(this.btnHeadingI);
             this.darkSectionPanel2.Controls.Add(this.label3);
             this.darkSectionPanel2.Controls.Add(this.btnUnderline);
-            this.darkSectionPanel2.Controls.Add(this.btnCustomTemp);
             this.darkSectionPanel2.Controls.Add(this.btnBold);
             this.darkSectionPanel2.Controls.Add(this.btnJScomment);
             this.darkSectionPanel2.Controls.Add(this.btnAddHtmlComment);
@@ -257,7 +257,7 @@ namespace HTMLEditX
             // 
             // btnCustomTemp
             // 
-            this.btnCustomTemp.Location = new System.Drawing.Point(4, 144);
+            this.btnCustomTemp.Location = new System.Drawing.Point(97, 35);
             this.btnCustomTemp.Name = "btnCustomTemp";
             this.btnCustomTemp.Padding = new System.Windows.Forms.Padding(5);
             this.btnCustomTemp.Size = new System.Drawing.Size(87, 61);
