@@ -337,7 +337,7 @@ namespace HTMLEditX
             // btnPreview
             // 
             this.btnPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPreview.Location = new System.Drawing.Point(500, 17);
+            this.btnPreview.Location = new System.Drawing.Point(500, 25);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Padding = new System.Windows.Forms.Padding(5);
             this.btnPreview.Size = new System.Drawing.Size(75, 23);
@@ -348,7 +348,7 @@ namespace HTMLEditX
             // btnUcheck
             // 
             this.btnUcheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUcheck.Location = new System.Drawing.Point(500, 46);
+            this.btnUcheck.Location = new System.Drawing.Point(500, 54);
             this.btnUcheck.Name = "btnUcheck";
             this.btnUcheck.Padding = new System.Windows.Forms.Padding(5);
             this.btnUcheck.Size = new System.Drawing.Size(75, 33);
@@ -359,7 +359,7 @@ namespace HTMLEditX
             // btnPrevedge
             // 
             this.btnPrevedge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrevedge.Location = new System.Drawing.Point(500, 85);
+            this.btnPrevedge.Location = new System.Drawing.Point(499, 93);
             this.btnPrevedge.Name = "btnPrevedge";
             this.btnPrevedge.Padding = new System.Windows.Forms.Padding(5);
             this.btnPrevedge.Size = new System.Drawing.Size(75, 33);
