@@ -6,6 +6,7 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions: */
+using Microsoft.Web.WebView2;
 namespace HTMLEditX
 {
     partial class UpdateChecker
@@ -38,7 +39,7 @@ namespace HTMLEditX
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateChecker));
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
-            ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // webView21
@@ -63,7 +64,6 @@ namespace HTMLEditX
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateChecker";
             this.Text = "Update Checker";
-            ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
 
         }
