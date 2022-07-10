@@ -7,7 +7,7 @@ IMPORTANT: THIS SOFTWARE IS NOW UNDER THE MIT LICENSE AS OF 09/07/2022 AND ALL F
 
 You may need the [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)  to run the program.
 
-Check net6 branch for the latest developement on .NET Core
+
 A lightweight .NET HTML Editor 
 
 ## How to help
