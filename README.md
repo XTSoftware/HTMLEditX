@@ -7,7 +7,7 @@ IMPORTANT: THIS SOFTWARE IS NOW UNDER THE MIT LICENSE AS OF 09/07/2022 AND ALL F
 
 You may need the [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)  to run the program.
 
-This branch has latest developement 
+This branch is designed to update from the old .NET Framework to the modern .NET 6
 
 A lightweight .NET HTML Editor 
 
