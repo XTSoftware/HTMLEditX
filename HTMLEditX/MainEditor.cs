@@ -123,7 +123,7 @@ namespace HTMLEditX
         private void btnPreview_Click(object sender, EventArgs e)
         {
             PreviewLoad();
-            PreviewPane previewPane = new PreviewPane();
+            PreviewEdge previewPane = new PreviewEdge();
             previewPane.ShowDialog();
         }
 
