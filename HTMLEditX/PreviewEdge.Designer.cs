@@ -59,21 +59,24 @@ namespace HTMLEditX
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
             this.webView21.Location = new System.Drawing.Point(0, 1);
+            this.webView21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(800, 437);
+            this.webView21.Size = new System.Drawing.Size(933, 504);
             this.webView21.Source = new System.Uri("C:\\Users\\Public\\preview.html", System.UriKind.Absolute);
             this.webView21.TabIndex = 0;
             this.webView21.ZoomFactor = 1D;
             // 
             // PreviewEdge
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 519);
             this.Controls.Add(this.webView21);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
             this.Name = "PreviewEdge";
-            this.Text = "MS Edge Preview";
+            this.Text = "Preview";
             this.Load += new System.EventHandler(this.PreviewEdge_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
