@@ -1,4 +1,4 @@
-IMPORTANT: THIS SOFTWARE IS NOW UNDER THE MIT LICENSE AS OF 09/07/2022 AND ALL FUTURE VERSIONS WILL BE RELEASED UNDER THIS LICENSE. FIND OUT MORE AT [MY GIST](https://gist.github.com/LandarXT/d60c1950861ff067274958fa65b2154a)
+The Code is now based at [ABX Project](https://github.com/abxproject/htmleditx)
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/XTSoftware/HTMLEditX?include_prereleases) ![GitHub](https://img.shields.io/github/license/XTSoftware/HTMLEditX)
 # HTMLEditX Alpha Editor
